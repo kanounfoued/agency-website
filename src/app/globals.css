@@ -23,6 +23,12 @@ body {
 .container {
   width: 100%;
   max-width: 1400px;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: auto;
+}
+
+@media screen and (width < 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
 }

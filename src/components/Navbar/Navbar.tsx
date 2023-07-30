@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar(...props: any) {
+export default function Navbar() {
   return (
-    <header className="flex align-center">
-      <div className="mr-auto">
+    <header className="flex items-center px-8 py-4">
+      <div className="min-w-[152px] mr-auto">
         <Link href="/">
           <Image
             src="/images/logo.png"
@@ -15,25 +15,27 @@ export default function Navbar(...props: any) {
         </Link>
       </div>
 
-      <nav>
-        <ul>
-          <li>
+      <nav className="flex items-center">
+        <ul className="inline-flex">
+          <li className="px-8 py-2">
             <Link href="/about">about</Link>
           </li>
-          <li>
+          <li className="px-8 py-2">
             <Link href="/services">services</Link>
           </li>
-          <li>
+          <li className="px-8 py-2">
             <Link href="/pricing">pricing</Link>
           </li>
-          <li>
+          <li className="px-8 py-2">
             <Link href="/blog">blog</Link>
           </li>
         </ul>
       </nav>
 
       <div className="ml-auto">
-        <button>Contact</button>
+        <button className="px-9 py-2.5 rounded border border-solid">
+          Contact
+        </button>
       </div>
     </header>
   );
