@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --blue-background: #28293e;
+  --primary-background: #fdf0e9;
+  --primary-text-color: #391400;
+  --secondary-background: #28293e;
+  --secondary-text-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +16,7 @@
 
 * {
   box-sizing: border-box;
+  /* color: var(--secondary-text-color); */
 }
 
 body {
@@ -20,9 +24,31 @@ body {
   margin: 0;
 }
 
+.primary-wrapper {
+  background-color: var(--primary-background);
+}
+
+.primary-wrapper * {
+  color: var(--primary-text-color);
+}
+
+.secondary-wrapper {
+  background-color: var(--secondary-background);
+}
+
+.secondary-wrapper * {
+  color: var(--secondary-text-color);
+}
+
 .container {
   width: 100%;
   max-width: 1400px;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: auto;
+}
+
+@media screen and (width < 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
 }
