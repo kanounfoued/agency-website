@@ -7,6 +7,8 @@
   --primary-text-color: #391400;
   --secondary-background: #28293e;
   --secondary-text-color: #ffffff;
+  --main-color: #ef6d58;
+  --main-border-color: #f3d1bf;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -120,4 +122,5 @@ body {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+  color: rgba(255, 255, 255, 0.64);
 }
