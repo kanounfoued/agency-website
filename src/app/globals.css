@@ -124,3 +124,11 @@ body {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.64);
 }
+
+.primary-wrapper .gray_text {
+  color: rgba(57, 20, 0, 0.64);
+}
+
+.secondary-wrapper .gray_text {
+  color: rgba(255, 255, 255, 0.64);
+}
