@@ -1,9 +1,9 @@
 import "../app/globals.css";
 import BasicLayout from "@/components/layouts/BasicLayout/BasicLayout";
 import type { AppProps } from "next/app";
-import { Roboto_Mono } from "next/font/google";
+import { Epilogue } from "next/font/google";
 
-export const roboto_mono = Roboto_Mono({
+export const epilogue_mono = Epilogue({
   weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -11,7 +11,7 @@ export const roboto_mono = Roboto_Mono({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={roboto_mono.className}>
+    <div className={epilogue_mono.className}>
       <BasicLayout>
         <Component {...pageProps} />
       </BasicLayout>
