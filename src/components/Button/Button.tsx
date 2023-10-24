@@ -16,7 +16,7 @@ export default function Button({
   if (type === "text") {
     return (
       <button
-        className={`px-6 py-[0.7rem] rounded-md  ${className}`}
+        className={`py-[0.7rem] rounded-md  ${className}`}
         onClick={onClick}
       >
         {label}
