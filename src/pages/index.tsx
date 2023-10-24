@@ -61,6 +61,7 @@ export default function Page() {
 
       <section className="primary-wrapper">
         <Container>
+          {/* Brands */}
           <div className="flex py-12 justify-between gap-8 px-8 flex-wrap border-y border-[--main-border-color] mb-24">
             {brands.map((brand) => (
               <div
@@ -77,6 +78,7 @@ export default function Page() {
             ))}
           </div>
 
+          {/* About */}
           <div className="flex gap-24 px-8 content-center mb-40">
             <div className="">
               <Image
@@ -104,10 +106,11 @@ export default function Page() {
                 the merchant&apos;s team.
               </Typography>
 
-              <Button type="secondary" label="ABOUT US" />
+              <Button className="bg-white" type="secondary" label="ABOUT US" />
             </div>
           </div>
 
+          {/* Statistics */}
           <div className="grid grid-cols-3 mb-36 px-8">
             <div className="mw-[24rem] p-9 border-l border-t border-b border-[--main-border-color]">
               <Typography level={LevelProps.h3}>42%</Typography>
@@ -125,6 +128,7 @@ export default function Page() {
             </div>
           </div>
 
+          {/* How We Work */}
           <div className="grid grid-cols-2 gap-24 px-8 pb-24 mb-36 border-b border-[--main-border-color]">
             <div>
               <Typography className="mb-5" level={LevelProps.h5}>
@@ -169,6 +173,7 @@ export default function Page() {
             </div>
           </div>
 
+          {/* Video Reel */}
           <div className="grid grid-cols-2 gap-24 mb-64 px-8">
             <div className="mr-auto">
               <Image
@@ -194,6 +199,7 @@ export default function Page() {
             </div>
           </div>
 
+          {/* Features */}
           <div className="grid grid-cols-2 gap-24 mb-24 px-8">
             <div className="py-28">
               <Typography className="mb-5" level={LevelProps.h5}>
@@ -293,6 +299,100 @@ export default function Page() {
                 alt="features-epic"
                 height={368}
                 width={570}
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-12 mb-24 px-8">
+            <div className="p-[5rem] pl-[0] pr-[13rem]">
+              <Typography level={LevelProps.h5}>Features</Typography>
+              <Typography className="mt-[2rem]" level={LevelProps.text}>
+                Long run, and work as an extension of the merchant&apos;s team.
+              </Typography>
+              <Button className="mt-[2rem]" type="text" label="Read More" />
+            </div>
+
+            <div className="flex items-end">
+              <div className="bg-white p-8 h-[300px] w-[300px] border border-[#F3D1BF]">
+                <div className="flex align-center justify-center h-[80px] w-[80px] p-4 rounded-full bg-[#EF6C57]">
+                  <Image
+                    src="/design-shape-icon.svg"
+                    alt="exp-design-agency"
+                    height={15}
+                    width={15}
+                  />
+                </div>
+                <Typography
+                  className="mt-[2rem] !font-bold"
+                  level={LevelProps.text}
+                >
+                  Professional
+                </Typography>
+                <Typography className="mt-[2rem]" level={LevelProps.small_text}>
+                  Full service range including technical skills, design.
+                </Typography>
+              </div>
+              <div className="p-8 h-[240px] w-[300px] border border-[#F3D1BF]">
+                <Typography
+                  className="mt-[3rem] !font-bold"
+                  level={LevelProps.text}
+                >
+                  Accessibility
+                </Typography>
+                <Typography className="mt-[2rem]" level={LevelProps.small_text}>
+                  Business understanding, ability to put themselves.{" "}
+                </Typography>
+              </div>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div className="grid grid-cols-2 gap-12 mb-24 px-8">
+            <div>
+              <Image
+                src="/images/service-epic.png"
+                alt="service epic"
+                height={580}
+                width={570}
+              />
+            </div>
+
+            <div className="py-8">
+              <Typography level={LevelProps.h5}>SERVICE</Typography>
+              <Typography className="mt-[2rem]" level={LevelProps.h2}>
+                Making Complex Digital Products
+              </Typography>
+              <Typography className="mt-[2rem]" level={LevelProps.big_text}>
+                Agency provides a full service range including technical skills,
+                design, business.
+              </Typography>
+
+              <div>
+                <div className="flex justify-center items-center mt-[2rem]">
+                  <Image
+                    src="/images/jenny-murtaugh.png"
+                    alt="Jenny murtaugh"
+                    height={64}
+                    width={64}
+                  />
+
+                  <Typography
+                    className="ml-[2rem]"
+                    level={LevelProps.gray_text}
+                  >
+                    &ldquo;Understanding, ability to put themselves in the
+                    merchant&apos;s shoes. It is meant to partner.&rdquo;
+                  </Typography>
+                </div>
+                <Typography className="ml-20" level={LevelProps.big_text}>
+                  Jenny Murtaugh
+                </Typography>
+              </div>
+
+              <Button
+                className="bg-white mt-[2rem]"
+                type="secondary"
+                label="Explore"
               />
             </div>
           </div>
