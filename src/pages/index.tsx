@@ -352,7 +352,7 @@ export default function Page() {
               <Image
                 src="/images/service-epic.png"
                 alt="service epic"
-                height={580}
+                height={80}
                 width={570}
               />
             </div>
@@ -394,6 +394,69 @@ export default function Page() {
                 type="secondary"
                 label="Explore"
               />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 mb-24 px-8">
+            <Typography level={LevelProps.h5}>SERVICE</Typography>
+            <Typography className="mt-4" level={LevelProps.h3}>
+              How Our Agency <br /> Can Help
+            </Typography>
+
+            <div className="grid grid-cols-3 mt-12">
+              <div className="border border-[#F3D1BF] p-12">
+                <div className="flex justify-center items-center h-[80px] w-[80px] bg-[#EF6C57] rounded-full">
+                  <Image
+                    src="/icon/board-icon.png"
+                    alt="board icon"
+                    height={30}
+                    width={30}
+                  />
+                </div>
+                <Typography className="mt-8 !font-bold" level={LevelProps.text}>
+                  Design
+                </Typography>
+                <Typography className="mt-6" level={LevelProps.gray_text}>
+                  Agency provides a full service range including technical
+                  skills, design.
+                </Typography>
+                <Button className="mt-8" type="text" label="Learn More" />
+              </div>
+              <div className="border border-[#F3D1BF] p-12">
+                <div className="flex justify-center items-center h-[80px] w-[80px] bg-[#EF6C57] rounded-full">
+                  <Image
+                    src="/icon/hand-bag-icon.png"
+                    alt="hand bag icon"
+                    height={30}
+                    width={30}
+                  />
+                </div>
+                <Typography className="mt-8 !font-bold" level={LevelProps.text}>
+                  Development
+                </Typography>
+                <Typography className="mt-6" level={LevelProps.gray_text}>
+                  Full service range including technical skills, design,
+                  business.
+                </Typography>
+                <Button className="mt-8" type="text" label="Discover More" />
+              </div>
+              <div className="border border-[#F3D1BF] p-12">
+                <div className="flex justify-center items-center h-[80px] w-[80px] bg-[#EF6C57] rounded-full">
+                  <Image
+                    src="/icon/cog-icon.png"
+                    alt="cog icon"
+                    height={30}
+                    width={30}
+                  />
+                </div>
+                <Typography className="mt-8 !font-bold" level={LevelProps.text}>
+                  Marketing
+                </Typography>
+                <Typography className="mt-6" level={LevelProps.gray_text}>
+                  Technical skills, design, business understanding, ability.
+                </Typography>
+                <Button className="mt-8" type="text" label="Explore More" />
+              </div>
             </div>
           </div>
 
