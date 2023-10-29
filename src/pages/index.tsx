@@ -80,7 +80,7 @@ export default function Page() {
 
           {/* About */}
           <div className="flex gap-24 px-8 content-center mb-40">
-            <div className="">
+            <div>
               <Image
                 className="ml-auto"
                 src="/images/exp-design-agency.png"
@@ -459,9 +459,187 @@ export default function Page() {
               </div>
             </div>
           </div>
-
-          <div className="h-[10px]"></div>
         </Container>
+
+        {/* Portfolio */}
+        <div className="secondary-wrapper">
+          <Container>
+            <div className="grid grid-cols-1 mb-24 py-12 px-8 text-center">
+              <Typography level={LevelProps.h5}>Portfolio</Typography>
+              <Typography level={LevelProps.h2}>Latest Work</Typography>
+
+              <div className="mt-8">
+                <ul className="flex flex-wrap justify-center">
+                  <li className="relative p-4">
+                    Show All
+                    <Typography
+                      level={LevelProps.small_text}
+                      className="relative inline-flex bottom-4"
+                    >
+                      14
+                    </Typography>
+                  </li>
+                  <li className="relative p-4">
+                    Design
+                    <Typography
+                      level={LevelProps.small_text}
+                      className="relative inline-flex bottom-4"
+                    >
+                      6
+                    </Typography>
+                  </li>
+                  <li className="relative p-4">
+                    Branding
+                    <Typography
+                      level={LevelProps.small_text}
+                      className="relative inline-flex  bottom-4"
+                    >
+                      4
+                    </Typography>
+                  </li>
+                  <li className="relative p-4">
+                    illustration
+                    <Typography
+                      level={LevelProps.small_text}
+                      className="relative inline-flex  bottom-4"
+                    >
+                      3
+                    </Typography>
+                  </li>
+                  <li className="relative p-4">
+                    Motion
+                    <Typography
+                      level={LevelProps.small_text}
+                      className="relative inline-flex  bottom-4"
+                    >
+                      1
+                    </Typography>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="grid grid-cols-1 gap-1 mt-12">
+                <div className="grid grid-cols-5 grid-rows-10 gap-2">
+                  <div className="relative col-span-2 p-4">
+                    <Image
+                      src="/images/sofa.png"
+                      alt="Sofa"
+                      width={400}
+                      height={400}
+                      style={{
+                        objectFit: "fill",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                    <div className="text-left absolute left-12 bottom-16">
+                      <span
+                        style={{ color: "black" }}
+                        className="py-3 px-6 bg-[white] rounded-[24px]"
+                      >
+                        Design
+                      </span>
+                      <Typography
+                        className="!font-bold mt-8"
+                        level={LevelProps.h3}
+                      >
+                        SOFA
+                      </Typography>
+                    </div>
+                  </div>
+                  <div className="relative  col-span-3 p-4">
+                    <Image
+                      src="/images/keyboard.png"
+                      alt="keyboard"
+                      width={400}
+                      height={400}
+                      style={{
+                        objectFit: "fill",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                    <div className="text-left absolute left-12 bottom-16">
+                      <span
+                        style={{ color: "black" }}
+                        className="py-3 px-6 bg-[white] rounded-[24px]"
+                      >
+                        Branding
+                      </span>
+                      <Typography
+                        className="!font-bold mt-8"
+                        level={LevelProps.h3}
+                      >
+                        KeyBoard
+                      </Typography>
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-5 gap-2">
+                  <div className="relative  col-span-3 p-4">
+                    <Image
+                      src="/images/work-media.png"
+                      alt="work-media"
+                      width={400}
+                      height={400}
+                      style={{
+                        objectFit: "fill",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                    <div className="text-left absolute left-12 bottom-16">
+                      <span
+                        style={{ color: "black" }}
+                        className="py-3 px-6 bg-[white] rounded-[24px]"
+                      >
+                        Illustration
+                      </span>
+                      <Typography
+                        className="!font-bold mt-8"
+                        level={LevelProps.h3}
+                      >
+                        Work Media
+                      </Typography>
+                    </div>
+                  </div>
+                  <div className="relative  col-span-2 p-4">
+                    <Image
+                      src="/images/dddone.png"
+                      alt="dddone"
+                      width={400}
+                      height={400}
+                      style={{
+                        objectFit: "fill",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                    <div className="text-left absolute left-12 bottom-16">
+                      <span
+                        style={{ color: "black" }}
+                        className="py-3 px-6 bg-[white] rounded-[24px]"
+                      >
+                        Motion
+                      </span>
+                      <Typography
+                        className="!font-bold mt-8"
+                        level={LevelProps.h3}
+                      >
+                        DDDone
+                      </Typography>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12">
+                <Button type="secondary" label="Explore More" />
+              </div>
+            </div>
+          </Container>
+        </div>
+        <div className="h-[10px]"></div>
       </section>
     </div>
   );
