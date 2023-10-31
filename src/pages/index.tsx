@@ -637,6 +637,58 @@ export default function Page() {
                 <Button type="secondary" label="Explore More" />
               </div>
             </div>
+
+            <div className="primary-wrapper grid grid-cols-3 pt-12 px-20 relative">
+              <div className="absolute left-[5rem] top-[-74px]">
+                <Image
+                  src="/icon/gift-icon.png"
+                  alt="gift card"
+                  width={148}
+                  height={148}
+                />
+              </div>
+
+              <div>
+                <Typography className="mt-8" level={LevelProps.h5}>
+                  Get Started
+                </Typography>
+                <Typography
+                  style={{
+                    color: "var(--primary-text-color)",
+                  }}
+                  className="mt-4"
+                  level={LevelProps.h4}
+                >
+                  We Help Companies
+                  <br /> Move Faster
+                </Typography>
+                <Button className="mt-4" type="primary" label="Contact Us" />
+              </div>
+
+              <div>
+                <Image
+                  src="/images/gift-card.png"
+                  alt="gift card"
+                  width={338}
+                  height={176}
+                  style={{
+                    objectFit: "contain",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+
+              <div className="absolute right-16 bottom-0">
+                <Image
+                  src="/images/gift-lady.png"
+                  alt="gift lady"
+                  width={239}
+                  height={396}
+                />
+              </div>
+            </div>
+            <div className="h-[20px]"></div>
           </Container>
         </div>
         <div className="h-[10px]"></div>
